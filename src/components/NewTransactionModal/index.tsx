@@ -4,7 +4,12 @@ import closeImg from "../../assets/close.svg";
 import incomeImg from "../../assets/income.svg";
 import outcomeImg from "../../assets/outcome.svg";
 import { TransactionsContext } from "../../TransactionsContext";
-import { Container, TransactionTypeContainer, RadioBox } from "./styles";
+import {
+	Container,
+	TransactionTypeContainer,
+	RadioBox,
+	SelectContainer,
+} from "./styles";
 
 interface NewTransactionModalProps {
 	isOpen: boolean;
@@ -102,11 +107,25 @@ export function NewTransactionModal({
 					</RadioBox>
 				</TransactionTypeContainer>
 
-				<input
+				{/* <input
 					placeholder="Categoria"
 					value={category}
 					onChange={event => setCategory(event.target.value)}
-				/>
+				/> */}
+				<SelectContainer>
+					<select
+						value={category}
+						onChange={event => setCategory(event.target.value)}>
+						<option value="Alimentação">Alimentação</option>
+						<option value="Lazer">Lazer</option>
+						<option value="Casa">Casa</option>
+						<option value="Saúde">Saúde</option>
+						<option value="Transporte">Transporte</option>
+						<option value="Carro">Carro</option>
+						<option value="Trabalho">Trabalho</option>
+						<option value="Outros">Outros</option>
+					</select>
+				</SelectContainer>
 				<button type="submit">Cadastrar</button>
 			</Container>
 		</Modal>

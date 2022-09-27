@@ -58,7 +58,7 @@ interface RadioBoxProps {
 const colors = {
 	green: "#33cc95",
 	red: "#e52e4d",
-}
+};
 
 export const RadioBox = styled.button<RadioBoxProps>`
 	height: 4rem;
@@ -84,5 +84,19 @@ export const RadioBox = styled.button<RadioBoxProps>`
 		margin-left: 1rem;
 		font-size: 1rem;
 		color: var(--text-title);
+	}
+`;
+export const SelectContainer = styled.div`
+	position: relative;
+	margin-top: 1rem;
+	select {
+		width: 100%;
+		padding: 1rem 1.5rem;
+		height: 4rem;
+		border-radius: 0.25rem;
+		border: 1px solid #d7d7d7;
+		background: #e7e9ee;
+		font-weight: 400;
+		font-size: 1rem;
 	}
 `;
