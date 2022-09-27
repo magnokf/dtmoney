@@ -1,12 +1,10 @@
 # Dt Money
+
 ## Projeto para o treinamento inicial em fundamentos básicos ReactJS.
-### Chapter two, trilha ReactJs (Rocketseat)
+
+### Chapter two, trilha ReactJs ([Rocketseat](https://www.rocketseat.com.br/))
+
 Nesse módulo construímos uma aplicação front-end web completa utilizando conceitos e ferramentas importantes do ecossistema React como Styled Components, MirageJS, Context API, hooks, Axios e muito mais.
-
-
-
-
-
 
 # Getting Started with Create React App
 
